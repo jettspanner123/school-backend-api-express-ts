@@ -11,3 +11,11 @@ generator client {
 datasource db {
   provider = "postgresql"
 }
+
+model School {
+  id        String @id @default(uuid())
+  name      String
+  address   String
+  latitude  Float
+  longitude Float
+}

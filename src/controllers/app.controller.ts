@@ -7,15 +7,11 @@ import { type TypedRequestHandler } from "../types/express.types";
 import { ApiResponseFactory } from "../utils/api-response.util";
 
 export class AppController {
-  public static readonly getAppInfo: TypedRequestHandler<
-    SuccessResponse<AppInfoResponse>
-  > = (_req, res): void => {
-    const appInfoResponse: AppInfoResponse = AppService.instance.getAppInfo();
+    public static readonly getAppInfo: TypedRequestHandler<SuccessResponse<AppInfoResponse>> = (_req, res): void => {
+        const appInfoResponse: AppInfoResponse = AppService.instance.getAppInfo();
 
-    res
-      .status(HttpStatusCode.OK)
-      .json(ApiResponseFactory.success(ApplicationConstants.appReadyMessage, appInfoResponse));
-  };
+        res.status(HttpStatusCode.OK).json(ApiResponseFactory.success(ApplicationConstants.APP_READY_MESSAGE, appInfoResponse));
+    };
 
-  private constructor() {}
+    private constructor() {}
 }

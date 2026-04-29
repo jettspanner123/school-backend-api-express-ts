@@ -3,26 +3,19 @@ import { Router } from "express";
 import { SchoolController } from "../controllers/school.controller";
 import { ValidationMiddleware } from "../middleware/validation.middleware";
 import { SchoolValidation } from "../validators/school.validator";
+import { ApplicationConstants } from "../constants/application.constants";
 
 export class SchoolRoutes {
-  public static readonly router: ReturnType<typeof Router> = SchoolRoutes.buildRouter();
+    public static readonly router: ReturnType<typeof Router> = SchoolRoutes.buildRouter();
 
-  private constructor() {}
+    private constructor() {}
 
-  private static buildRouter(): ReturnType<typeof Router> {
-    const router: ReturnType<typeof Router> = Router();
+    private static buildRouter(): ReturnType<typeof Router> {
+        const router: ReturnType<typeof Router> = Router();
 
-    router.post(
-      "/addSchool",
-      ValidationMiddleware.validateBody(SchoolValidation.addSchoolRequestSchema),
-      SchoolController.addSchool,
-    );
-    router.get(
-      "/listSchools",
-      ValidationMiddleware.validateQuery(SchoolValidation.listSchoolsRequestSchema),
-      SchoolController.listSchools,
-    );
+        router.post(`${ApplicationConstants.API_CONTROLLER_ROUTES.SCHOOL}/addSchool`, ValidationMiddleware.validateBody(SchoolValidation.addSchoolRequestSchema), SchoolController.addSchool);
+        router.get(`${ApplicationConstants.API_CONTROLLER_ROUTES.SCHOOL}/listSchools`, ValidationMiddleware.validateQuery(SchoolValidation.listSchoolsRequestSchema), SchoolController.listSchools);
 
-    return router;
-  }
+        return router;
+    }
 }

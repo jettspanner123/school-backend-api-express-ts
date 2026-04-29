@@ -6,31 +6,31 @@ import { NotFoundMiddleware } from "./middleware/not-found";
 import { ApiRoutes } from "./routes";
 
 export class Application {
-  public static readonly expressApp: Express = Application.buildExpressApp();
+    public static readonly expressApp: Express = Application.buildExpressApp();
 
-  private constructor() {}
+    private constructor() {}
 
-  private static buildExpressApp(): Express {
-    const application: Express = express();
+    private static buildExpressApp(): Express {
+        const application: Express = express();
 
-    Application.configureMiddleware(application);
-    Application.configureRoutes(application);
-    Application.configureErrorHandling(application);
+        Application.configureMiddleware(application);
+        Application.configureRoutes(application);
+        Application.configureErrorHandling(application);
 
-    return application;
-  }
+        return application;
+    }
 
-  private static configureMiddleware(application: Express): void {
-    application.use(express.json());
-    application.use(express.urlencoded({ extended: true }));
-  }
+    private static configureMiddleware(application: Express): void {
+        application.use(express.json());
+        application.use(express.urlencoded({ extended: true }));
+    }
 
-  private static configureRoutes(application: Express): void {
-    application.use(ApplicationConstants.apiBasePath, ApiRoutes.router);
-  }
+    private static configureRoutes(application: Express): void {
+        application.use(ApplicationConstants.API_BASE_PATH, ApiRoutes.router);
+    }
 
-  private static configureErrorHandling(application: Express): void {
-    application.use(NotFoundMiddleware.handler);
-    application.use(ErrorHandlerMiddleware.handler);
-  }
+    private static configureErrorHandling(application: Express): void {
+        application.use(NotFoundMiddleware.handler);
+        application.use(ErrorHandlerMiddleware.handler);
+    }
 }

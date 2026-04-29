@@ -1,4 +1,4 @@
-import {ErrorCode, HttpStatusCode} from "../constants/http.constants";
+import { ErrorCode, HttpStatusCode } from "../constants/http.constants";
 
 export interface AppErrorOptions {
     readonly code?: string;

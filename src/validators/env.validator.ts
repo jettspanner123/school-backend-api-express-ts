@@ -3,29 +3,25 @@ import { z } from "zod";
 import { ApplicationConstants } from "../constants/application.constants";
 import { type NodeEnvironment } from "../models/env.model";
 
-const nodeEnvironmentValues: [NodeEnvironment, ...NodeEnvironment[]] = [
-  "development",
-  "production",
-  "test",
-];
+const nodeEnvironmentValues: [NodeEnvironment, ...NodeEnvironment[]] = ["development", "production", "test"];
 
 export class EnvValidation {
-  public static readonly environmentSchema = z
-    .object({
-      NODE_ENV: z.enum(nodeEnvironmentValues).default("development"),
-      PORT: z
-        .string()
-        .optional()
-        .transform((value: string | undefined): number => {
-          if (value === undefined || value.trim() === "") {
-            return ApplicationConstants.defaultPort;
-          }
+    public static readonly environmentSchema = z
+        .object({
+            NODE_ENV: z.enum(nodeEnvironmentValues).default("development"),
+            PORT: z
+                .string()
+                .optional()
+                .transform((value: string | undefined): number => {
+                    if (value === undefined || value.trim() === "") {
+                        return ApplicationConstants.DEFAULT_PORT;
+                    }
 
-          return Number(value);
+                    return Number(value);
+                })
+                .pipe(z.number().int().positive("PORT must be a positive integer")),
         })
-        .pipe(z.number().int().positive("PORT must be a positive integer")),
-    })
-    .strict();
+        .strict();
 
-  private constructor() {}
+    private constructor() {}
 }

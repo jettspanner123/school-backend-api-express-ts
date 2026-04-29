@@ -5,8 +5,7 @@ export class HttpStatusCode {
     public static readonly NOT_FOUND = 404;
     public static readonly OK = 200;
 
-    private constructor() {
-    }
+    private constructor() {}
 }
 
 export class ErrorCode {
@@ -14,6 +13,5 @@ export class ErrorCode {
     public static readonly RESOURCE_NOT_FOUND = "RESOURCE_NOT_FOUND";
     public static readonly VALIDATION_ERROR = "VALIDATION_ERROR";
 
-    private constructor() {
-    }
+    private constructor() {}
 }

@@ -1,6 +1,6 @@
 export interface SchoolResponse {
   readonly address: string;
-  readonly id: number;
+  readonly id: string;
   readonly latitude: number;
   readonly longitude: number;
   readonly name: string;

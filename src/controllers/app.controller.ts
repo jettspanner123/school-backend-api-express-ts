@@ -1,7 +1,7 @@
 import { ApplicationConstants } from "../constants/application.constants";
 import { HttpStatusCode } from "../constants/http.constants";
-import { type AppInfoResponse } from "../models/app-info-response.model";
-import { type SuccessResponse } from "../models/base-response.model";
+import { type AppInfoResponse } from "../models/response/app-info-response.model";
+import { type SuccessResponse } from "../models/response/base-response.model";
 import { AppService } from "../services/app.service";
 import { type TypedRequestHandler } from "../types/express.types";
 import { ApiResponseFactory } from "../utils/api-response.util";

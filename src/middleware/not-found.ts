@@ -1,7 +1,7 @@
 import {ApplicationConstants} from "../constants/application.constants";
 import {ErrorCode, HttpStatusCode} from "../constants/http.constants";
 import {AppError} from "../errors/app-error";
-import {type ErrorResponse} from "../models/base-response.model";
+import {type ErrorResponse} from "../models/response/base-response.model";
 import {type TypedRequestHandler} from "../types/express.types";
 
 export class NotFoundMiddleware {

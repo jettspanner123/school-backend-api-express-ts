@@ -1,7 +1,7 @@
 import {
     type ErrorResponse,
     type SuccessResponse,
-} from "../models/base-response.model";
+} from "../models/response/base-response.model";
 
 export class ApiResponseFactory {
     private constructor() {

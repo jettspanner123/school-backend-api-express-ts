@@ -8,12 +8,12 @@ export type TypedRequestHandler<
   TResponseBody = unknown,
   TRequestBody = EmptyObject,
   TRouteParams extends ParamsDictionary = ParamsDictionary,
-  TRequestQuery extends ParsedQs = ParsedQs,
+  TRequestQuery = ParsedQs,
 > = RequestHandler<TRouteParams, TResponseBody, TRequestBody, TRequestQuery>;
 
 export type TypedErrorRequestHandler<
   TResponseBody = unknown,
   TRouteParams extends ParamsDictionary = ParamsDictionary,
   TRequestBody = EmptyObject,
-  TRequestQuery extends ParsedQs = ParsedQs,
+  TRequestQuery = ParsedQs,
 > = ErrorRequestHandler<TRouteParams, TResponseBody, TRequestBody, TRequestQuery>;

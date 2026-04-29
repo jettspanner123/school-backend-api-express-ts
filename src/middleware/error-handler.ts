@@ -2,7 +2,7 @@ import {ZodError} from "zod";
 
 import {ErrorCode, HttpStatusCode} from "../constants/http.constants";
 import {AppError} from "../errors/app-error";
-import {type ErrorResponse} from "../models/base-response.model";
+import {type ErrorResponse} from "../models/response/base-response.model";
 import {type TypedErrorRequestHandler} from "../types/express.types";
 import {ApiResponseFactory} from "../utils/api-response.util";
 

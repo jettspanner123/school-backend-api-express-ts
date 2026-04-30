@@ -203,7 +203,7 @@ Schools are returned sorted by distance (nearest first) from the provided coordi
 ### Installation
 
 ```bash
-npm install
+bun install
 ```
 
 ### Environment Setup
@@ -223,18 +223,18 @@ cp .env.example .env
 ### Database Setup
 
 ```bash
-npx prisma migrate deploy
-npx prisma generate
+bunx prisma migrate deploy
+bunx prisma generate
 ```
 
 ### Scripts
 
 | Script | Command | Description |
 |---|---|---|
-| ![npm run dev](https://img.shields.io/badge/npm__run__dev-2563EB?style=for-the-badge) | `npm run dev` | Start dev server with hot reload |
-| ![npm run build](https://img.shields.io/badge/npm__run__build-EA580C?style=for-the-badge) | `npm run build` | Compile TypeScript to `dist/` |
-| ![npm run start](https://img.shields.io/badge/npm__run__start-16A34A?style=for-the-badge) | `npm run start` | Run compiled production build |
-| ![npm run format](https://img.shields.io/badge/npm__run__format-F7B93E?style=for-the-badge&logoColor=black) | `npm run format` | Format all files with Prettier |
+| ![bun run dev](https://img.shields.io/badge/bun__run__dev-2563EB?style=for-the-badge) | `bun run dev` | Start dev server with hot reload |
+| ![bun run build](https://img.shields.io/badge/bun__run__build-EA580C?style=for-the-badge) | `bun run build` | Compile TypeScript to `dist/` |
+| ![bun run start](https://img.shields.io/badge/bun__run__start-16A34A?style=for-the-badge) | `bun run start` | Run compiled production build |
+| ![bun run format](https://img.shields.io/badge/bun__run__format-F7B93E?style=for-the-badge&logoColor=black) | `bun run format` | Format all files with Prettier |
 
 ---
 

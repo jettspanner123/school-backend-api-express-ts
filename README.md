@@ -10,14 +10,35 @@
 ![Zod](https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white)
 ![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=black)
 
-![License](https://img.shields.io/badge/License-ISC-purple?style=flat-square)
-![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
-![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-ff69b4?style=flat-square)
+![License](https://img.shields.io/badge/License__ISC-8B5CF6?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version__1.0.0-2563EB?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status__Active-16A34A?style=for-the-badge)
+![PRs Welcome](https://img.shields.io/badge/PRs__Welcome-EC4899?style=for-the-badge)
+![Deployed](https://img.shields.io/badge/Deployed__on__Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)
 
 A clean, production-ready REST API scaffold built with Node.js, TypeScript, Express, Prisma ORM, and PostgreSQL.
 
+**Live Base URL:** `https://school-backend-yv0t.onrender.com/api`
+
 </div>
+
+---
+
+## Live Deployment
+
+![Render](https://img.shields.io/badge/Hosted__on__Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)
+
+This backend is deployed and publicly accessible at:
+
+```
+https://school-backend-yv0t.onrender.com
+```
+
+| Endpoint | Full URL |
+|---|---|
+| `GET /api/` | https://school-backend-yv0t.onrender.com/api/ |
+| `POST /api/school/addSchool` | https://school-backend-yv0t.onrender.com/api/school/addSchool |
+| `GET /api/school/listSchools` | https://school-backend-yv0t.onrender.com/api/school/listSchools |
 
 ---
 
@@ -25,13 +46,14 @@ A clean, production-ready REST API scaffold built with Node.js, TypeScript, Expr
 
 | Layer | Technology |
 |---|---|
-| ![Runtime](https://img.shields.io/badge/Runtime-Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) | JavaScript runtime built on V8 |
-| ![Language](https://img.shields.io/badge/Language-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) | Strongly typed superset of JavaScript |
-| ![Framework](https://img.shields.io/badge/Framework-Express_v5-000000?style=flat-square&logo=express&logoColor=white) | Fast, minimalist web framework |
-| ![Database](https://img.shields.io/badge/Database-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) | Relational database |
-| ![ORM](https://img.shields.io/badge/ORM-Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white) | Next-generation Node.js ORM with TypedSQL |
-| ![Validation](https://img.shields.io/badge/Validation-Zod-3E67B1?style=flat-square) | Schema-first TypeScript validation |
-| ![Formatter](https://img.shields.io/badge/Formatter-Prettier-F7B93E?style=flat-square&logo=prettier&logoColor=black) | Opinionated code formatter |
+| ![Runtime](https://img.shields.io/badge/Runtime__Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) | JavaScript runtime built on V8 |
+| ![Language](https://img.shields.io/badge/Language__TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) | Strongly typed superset of JavaScript |
+| ![Framework](https://img.shields.io/badge/Framework__Express__v5-000000?style=for-the-badge&logo=express&logoColor=white) | Fast, minimalist web framework |
+| ![Database](https://img.shields.io/badge/Database__PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white) | Relational database |
+| ![ORM](https://img.shields.io/badge/ORM__Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white) | Next-generation Node.js ORM with TypedSQL |
+| ![Validation](https://img.shields.io/badge/Validation__Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white) | Schema-first TypeScript validation |
+| ![Formatter](https://img.shields.io/badge/Formatter__Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=black) | Opinionated code formatter |
+| ![Hosting](https://img.shields.io/badge/Hosting__Render-46E3B7?style=for-the-badge&logo=render&logoColor=black) | Cloud hosting platform |
 
 ---
 
@@ -62,13 +84,13 @@ prisma/
 
 ## API Routes
 
-All routes are prefixed with `/api`.
+All routes are prefixed with `/api`. The live base URL is `https://school-backend-yv0t.onrender.com`.
 
-### ![App](https://img.shields.io/badge/App-Routes-6366f1?style=flat-square)
+### ![App Routes](https://img.shields.io/badge/App__Routes-6366F1?style=for-the-badge)
 
-| Method | Endpoint | Description |
-|---|---|---|
-| ![GET](https://img.shields.io/badge/GET-61affe?style=flat-square) | `/api/` | Returns API health and info |
+| Method | Endpoint | Live URL | Description |
+|---|---|---|---|
+| ![GET](https://img.shields.io/badge/GET-2563EB?style=for-the-badge) | `/api/` | https://school-backend-yv0t.onrender.com/api/ | Returns API health and info |
 
 #### Response
 
@@ -82,20 +104,22 @@ All routes are prefixed with `/api`.
 
 ---
 
-### ![School](https://img.shields.io/badge/School-Routes-10b981?style=flat-square)
+### ![School Routes](https://img.shields.io/badge/School__Routes-059669?style=for-the-badge)
 
-| Method | Endpoint | Description |
-|---|---|---|
-| ![POST](https://img.shields.io/badge/POST-49cc90?style=flat-square) | `/api/school/addSchool` | Add a new school to the database |
-| ![GET](https://img.shields.io/badge/GET-61affe?style=flat-square) | `/api/school/listSchools` | List all schools sorted by distance from a coordinate |
+| Method | Endpoint | Live URL | Description |
+|---|---|---|---|
+| ![POST](https://img.shields.io/badge/POST-16A34A?style=for-the-badge) | `/api/school/addSchool` | https://school-backend-yv0t.onrender.com/api/school/addSchool | Add a new school to the database |
+| ![GET](https://img.shields.io/badge/GET-2563EB?style=for-the-badge) | `/api/school/listSchools` | https://school-backend-yv0t.onrender.com/api/school/listSchools | List all schools sorted by distance |
 
 ---
 
 #### POST `/api/school/addSchool`
 
-![POST](https://img.shields.io/badge/POST-49cc90?style=flat-square)
-![Auth](https://img.shields.io/badge/Auth-None-lightgrey?style=flat-square)
-![Body](https://img.shields.io/badge/Body-JSON-orange?style=flat-square)
+![POST](https://img.shields.io/badge/POST-16A34A?style=for-the-badge)
+![Body JSON](https://img.shields.io/badge/Body__JSON-EA580C?style=for-the-badge)
+![Auth None](https://img.shields.io/badge/Auth__None-DC2626?style=for-the-badge)
+
+**Live URL:** `https://school-backend-yv0t.onrender.com/api/school/addSchool`
 
 Request body:
 
@@ -128,21 +152,23 @@ Success response `201 Created`:
 
 #### GET `/api/school/listSchools`
 
-![GET](https://img.shields.io/badge/GET-61affe?style=flat-square)
-![Auth](https://img.shields.io/badge/Auth-None-lightgrey?style=flat-square)
-![Query](https://img.shields.io/badge/Params-Query-blueviolet?style=flat-square)
+![GET](https://img.shields.io/badge/GET-2563EB?style=for-the-badge)
+![Params Query](https://img.shields.io/badge/Params__Query-7C3AED?style=for-the-badge)
+![Auth None](https://img.shields.io/badge/Auth__None-DC2626?style=for-the-badge)
+
+**Live URL:** `https://school-backend-yv0t.onrender.com/api/school/listSchools`
 
 Query parameters:
 
 | Parameter | Type | Required | Description |
 |---|---|---|---|
-| `latitude` | `number` | Yes | User's current latitude |
-| `longitude` | `number` | Yes | User's current longitude |
+| `latitude` | `number` | ![Required](https://img.shields.io/badge/Required-16A34A?style=for-the-badge) | User's current latitude |
+| `longitude` | `number` | ![Required](https://img.shields.io/badge/Required-16A34A?style=for-the-badge) | User's current longitude |
 
 Example request:
 
 ```
-GET /api/school/listSchools?latitude=37.7749&longitude=-122.4194
+GET https://school-backend-yv0t.onrender.com/api/school/listSchools?latitude=37.7749&longitude=-122.4194
 ```
 
 Success response `200 OK`:
@@ -171,8 +197,8 @@ Schools are returned sorted by distance (nearest first) from the provided coordi
 
 ### Prerequisites
 
-![Node](https://img.shields.io/badge/Node.js->=18-339933?style=flat-square&logo=nodedotjs)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL->=14-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Node.js >= 18](https://img.shields.io/badge/Node.js__>=__18-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![PostgreSQL >= 14](https://img.shields.io/badge/PostgreSQL__>=__14-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 
 ### Installation
 
@@ -205,10 +231,10 @@ npx prisma generate
 
 | Script | Command | Description |
 |---|---|---|
-| ![Dev](https://img.shields.io/badge/dev-blue?style=flat-square) | `npm run dev` | Start dev server with hot reload |
-| ![Build](https://img.shields.io/badge/build-orange?style=flat-square) | `npm run build` | Compile TypeScript to `dist/` |
-| ![Start](https://img.shields.io/badge/start-green?style=flat-square) | `npm run start` | Run compiled production build |
-| ![Format](https://img.shields.io/badge/format-F7B93E?style=flat-square) | `npm run format` | Format all files with Prettier |
+| ![npm run dev](https://img.shields.io/badge/npm__run__dev-2563EB?style=for-the-badge) | `npm run dev` | Start dev server with hot reload |
+| ![npm run build](https://img.shields.io/badge/npm__run__build-EA580C?style=for-the-badge) | `npm run build` | Compile TypeScript to `dist/` |
+| ![npm run start](https://img.shields.io/badge/npm__run__start-16A34A?style=for-the-badge) | `npm run start` | Run compiled production build |
+| ![npm run format](https://img.shields.io/badge/npm__run__format-F7B93E?style=for-the-badge&logoColor=black) | `npm run format` | Format all files with Prettier |
 
 ---
 
@@ -228,8 +254,9 @@ model School {
 
 <div align="center">
 
-![Built with](https://img.shields.io/badge/Built_with-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Powered by](https://img.shields.io/badge/Powered_by-Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![Database](https://img.shields.io/badge/Database-PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Built with TypeScript](https://img.shields.io/badge/Built__with__TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Powered by Express](https://img.shields.io/badge/Powered__by__Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![Database PostgreSQL](https://img.shields.io/badge/Database__PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Deployed on Render](https://img.shields.io/badge/Deployed__on__Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)
 
 </div>
